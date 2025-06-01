@@ -6,11 +6,6 @@ import asyncio
 import datetime
 import re # For birthday date validation
 
-# --- Configuration ---
-# It's best practice to store your bot token securely in an environment variable.
-# Example: export DISCORD_BOT_TOKEN="YOUR_ACTUAL_BOT_TOKEN_HERE"
-# Example: export GEMINI_API_KEY="YOUR_GEMINI_API_KEY_HERE"
-
 TOKEN = os.getenv('DISCORD_BOT_TOKEN') 
 GEMINI_API_KEY = os.getenv('GEMINI_API_KEY') # New environment variable for Gemini
 
@@ -22,8 +17,6 @@ if TOKEN is None:
 
 if GEMINI_API_KEY is None:
     print("Warning: GEMINI_API_KEY environment variable not set. AI features will use fallback/placeholder behaviors.")
-    # For quick local testing ONLY, uncomment and replace:
-    # GEMINI_API_KEY = "YOUR_PASTE_YOUR_GEMINI_API_KEY_HERE"
 
 # Persistent storage file paths (These will be ephemeral on Render's free tier without a mounted disk)
 CONFIG_FILE = 'bot_config.json'
