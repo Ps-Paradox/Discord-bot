@@ -1,0 +1,73 @@
+All Slash Commands (/commands)
+I. User Commands:
+/ping
+Description: Checks bot latency.
+Usage: /ping
+/mention [user]
+Description: Mentions a user in the current channel.
+Usage: /mention user:@Username
+/generate_image [prompt]
+Description: Generates an image based on a text prompt using AI.
+Usage: /generate_image prompt:a cute anime cat sitting on a cloud
+/animequiz
+Description: Starts a pre-defined anime quiz event in the designated quiz channel.
+Usage: /animequiz
+/leaderboard
+Description: Displays the top users by their total XP.
+Usage: /leaderboard
+/rank
+Description: Shows your current XP and level.
+Usage: /rank
+/set_birthday [month_day]
+Description: Sets your birthday (MM-DD) for birthday wishes and role.
+Usage: /set_birthday month_day:01-15
+/remove_birthday
+Description: Removes your birthday from the bot's memory.
+Usage: /remove_birthday
+/animeinfo [title]
+Description: Get information about an anime series.
+Usage: /animeinfo title:Naruto
+/animequote
+Description: Get a random inspiring anime quote.
+Usage: /animequote
+II. Admin Commands (Require specific Discord permissions like Manage Channels, Manage Roles, or Manage Guild/Manage Server):
+/set_response_channel [channel]
+Description: Sets the channel where the bot will respond to general chat.
+Required Permission: Manage Channels
+Usage: /set_response_channel channel:#general-chat
+/set_quiz_channel [channel]
+Description: Sets the channel where anime quiz events will be hosted.
+Required Permission: Manage Channels
+Usage: /set_quiz_channel channel:#quiz-events
+/animequiz_generate [topic] [num_questions]
+Description: Starts an AI-generated anime quiz with images based on a topic.
+Required Permission: Manage Guild
+Usage: /animequiz_generate topic:Jujutsu Kaisen num_questions:5
+/set_birthday_channel [channel]
+Description: Sets the channel for automatic birthday wishes.
+Required Permission: Manage Channels
+Usage: /set_birthday_channel channel:#birthdays
+/set_birthday_role [role]
+Description: Sets the role to be given to users on their birthday.
+Required Permission: Manage Roles
+Usage: /set_birthday_role role:@Birthday Buddy
+/set_welcome_channel [channel]
+Description: Sets the channel for new member welcome messages.
+Required Permission: Manage Channels
+Usage: /set_welcome_channel channel:#welcome
+/set_welcome_message [message_template]
+Description: Sets the custom welcome message template. Use {user.mention}, {user.name}, {server.name}.
+Required Permission: Manage Guild
+Usage: /set_welcome_message message_template:Welcome {user.mention} to {server.name}!
+/set_farewell_channel [channel]
+Description: Sets the channel for member farewell messages.
+Required Permission: Manage Channels
+Usage: /set_farewell_channel channel:#leave-log
+/set_farewell_message [message_template]
+Description: Sets the custom farewell message template. Use {user.name}, {server.name}.
+Required Permission: Manage Guild
+Usage: /set_farewell_message message_template:Goodbye {user.name} from {server.name}!
+/rank_settings [channel]
+Description: Sets the channel for level-up announcements.
+Required Permission: Manage Channels
+Usage: /rank_settings channel:#level-ups
