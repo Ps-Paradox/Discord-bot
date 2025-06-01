@@ -1,4 +1,4 @@
-## Table of Contents
+# Table of Contents
 
 1.  [Key Features](#key-features)
 2.  [Important Note on Data Persistence (for Deployment)](#important-note-on-data-persistence-for-deployment)
@@ -44,7 +44,7 @@
     *   `/set_farewell_channel` & `/set_farewell_message`: Customize farewell messages for leaving members.
 *   **Chat Logging:** Logs message metadata (excluding identifiable user IDs) to a local file for diagnostic purposes.
 
-## 2. Important Note on Data Persistence (for Deployment)
+# 2. Important Note on Data Persistence (for Deployment)
 
 **The current version of this bot uses JSON files (`bot_config.json`, `leaderboard.json`, `birthdays.json`) for data persistence.**
 
@@ -67,7 +67,7 @@
 *   A **Discord Bot Application** (created via Discord Developer Portal)
 *   A **Google Gemini API Key** (for full AI functionality - *optional for basic bot operation as placeholders are used*)
 
-## 4. Local Setup Guide
+# 4. Local Setup Guide
 
 Follow these steps to get your bot running on your local machine.
 
@@ -87,7 +87,7 @@ Follow these steps to get your bot running on your local machine.
     ```
     This file lists all installed packages and is crucial for cloud deployments like Render.
 
-### 4.2. Create a Discord Bot Application
+# 4.2. Create a Discord Bot Application
 
 1.  Go to the [Discord Developer Portal](https://discord.com/developers/applications).
 2.  Click **"New Application"**, give it a name, and click "Create".
@@ -99,7 +99,7 @@ Follow these steps to get your bot running on your local machine.
     *   **SERVER MEMBERS INTENT** (Crucial for welcome/farewell messages, roles, and fetching guild members)
 6.  Under the "Build-A-Bot" section, copy your bot's **TOKEN**. **Keep this token absolutely private! Never share it publicly or commit it directly into your code.**
 
-### 4.3. Invite Your Bot to Your Server
+# 4.3. Invite Your Bot to Your Server
 
 1.  Go to the **"OAuth2"** -> **"URL Generator"** tab on the left sidebar in the Discord Developer Portal.
 2.  Under "Scopes", select `bot`.
